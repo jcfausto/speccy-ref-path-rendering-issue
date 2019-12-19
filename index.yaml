@@ -1,0 +1,5 @@
+paths:
+    /v1/books:
+      $ref: "./v1/books/index.yaml"
+    /v1/pets:
+      $ref: "./v1/pets/index.yaml"

@@ -1,0 +1,45 @@
+paths:
+  /v1/books:
+    get:
+      responses:
+        "200":
+          description: success
+        "401":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    example: COD001
+                  message:
+                    type: string
+                    example: Some message here.
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/paths/~1v1~1books/get/responses/401/content/application~1j\
+                  son/schema"
+  /v1/pets:
+    get:
+      responses:
+        "200":
+          description: success
+        "401":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/paths/~1v1~1books/get/responses/401/content/application~1j\
+                  son/schema"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/paths/~1v1~1books/get/responses/401/content/application~1j\
+                  son/schema"

@@ -1,0 +1,8 @@
+type: object
+properties:
+  code:
+    type: string
+    example: COD001
+  message:
+    type: string
+    example: Some message here.
