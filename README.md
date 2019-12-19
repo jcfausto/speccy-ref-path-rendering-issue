@@ -14,6 +14,7 @@ That every $ref will have its content rendered to the output.yaml file.
 
 # Details
 
+```
 ├── README.md
 ├── index.yaml
 ├── output.yaml
@@ -25,6 +26,7 @@ That every $ref will have its content rendered to the output.yaml file.
     │   └── index.yaml
     └── pets
         └── index.yaml
+```
 
 I have a single definition for error messages in the ```shared/schemas/error.yaml``` file.
 
